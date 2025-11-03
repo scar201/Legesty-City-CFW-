@@ -1,15 +1,10 @@
-<div class="footer-links">
-                <a href="https://discord.com/channels/1352650776865931294/1352651828243988520" target="_blank">📋 القوانين</a>
-                <a href="https://discord.gg/fm4" target="_blank">💬 ديسكورد</a>
-                <a href="https://roblox.com/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legesty City RP | أفضل خادم رول بلاي في روبلوكس</title>
+    <title>Legesty City - سيرفر الحياة الواقعية الأفضل</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -17,101 +12,26 @@
         }
 
         body {
-            font-family: 'Cairo', sans-serif;
-            background: #0a0015;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
             overflow-x: hidden;
-            position: relative;
         }
 
-        /* Animated Background with 3D effect */
-        .bg-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            background: linear-gradient(45deg, 
-                #0a0015 0%, 
-                #1a0033 15%, 
-                #2d0052 30%, 
-                #4a0080 45%, 
-                #6600cc 60%, 
-                #8000ff 75%, 
-                #9933ff 90%, 
-                #b366ff 100%);
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        /* Floating 3D Elements */
-        .floating-elements {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        .floating-cube {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, rgba(147, 51, 234, 0.3), rgba(168, 85, 247, 0.5));
-            border: 1px solid rgba(147, 51, 234, 0.7);
-            border-radius: 8px;
-            animation: float3D 8s infinite ease-in-out;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 8px 32px rgba(147, 51, 234, 0.3);
-        }
-
-        @keyframes float3D {
-            0%, 100% { 
-                transform: translateY(0px) rotateX(0deg) rotateY(0deg); 
-                opacity: 0.3;
-            }
-            25% { 
-                transform: translateY(-30px) rotateX(90deg) rotateY(45deg); 
-                opacity: 0.8;
-            }
-            50% { 
-                transform: translateY(-60px) rotateX(180deg) rotateY(90deg); 
-                opacity: 1;
-            }
-            75% { 
-                transform: translateY(-30px) rotateX(270deg) rotateY(135deg); 
-                opacity: 0.8;
-            }
-        }
-
-        /* Glassmorphism Header */
-        header {
-            background: rgba(10, 0, 21, 0.1);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(147, 51, 234, 0.2);
-            padding: 1.5rem 0;
+        /* Header */
+        .header {
             position: fixed;
             top: 0;
             width: 100%;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(10px);
             z-index: 1000;
-            transition: all 0.3s ease;
+            padding: 1rem 0;
+            border-bottom: 2px solid #000000;
         }
 
-        header.scrolled {
-            background: rgba(10, 0, 21, 0.9);
-            backdrop-filter: blur(30px);
-            box-shadow: 0 8px 32px rgba(147, 51, 234, 0.3);
-        }
-
-        nav {
-            max-width: 1400px;
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -120,895 +40,638 @@
         }
 
         .logo {
-            font-size: 2.5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #ffffff, #e879f9, #c084fc, #a855f7);
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #7affff, #5ce1e6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(124, 58, 237, 0.8);
-            position: relative;
+            text-shadow: 0 0 20px rgba(122, 255, 255, 0.5);
         }
 
-        .logo::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #7c3aed, #a855f7, #c084fc);
-            border-radius: 2px;
-            animation: logoGlow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes logoGlow {
-            from { box-shadow: 0 0 10px rgba(124, 58, 237, 0.5); }
-            to { box-shadow: 0 0 20px rgba(124, 58, 237, 1), 0 0 30px rgba(168, 85, 247, 0.5); }
-        }
-
-        .nav-links {
+        .nav-menu {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
 
-        .nav-links a {
-            color: white;
+        .nav-item a {
+            color: #ffffff;
             text-decoration: none;
-            padding: 0.8rem 1.5rem;
+            padding: 0.5rem 1rem;
             border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
-            background: rgba(147, 51, 234, 0.1);
-            border: 1px solid rgba(147, 51, 234, 0.3);
         }
 
-        .nav-links a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.6s ease;
+        .nav-item a:hover {
+            background: linear-gradient(45deg, #7affff, #5ce1e6);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(122, 255, 255, 0.4);
         }
 
-        .nav-links a:hover::before {
-            left: 100%;
-        }
-
-        .nav-links a:hover {
-            background: rgba(147, 51, 234, 0.3);
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 10px 25px rgba(147, 51, 234, 0.4);
-            border-color: rgba(147, 51, 234, 0.6);
-        }
-
-        /* Hero Section with 3D effects */
+        /* Hero Section */
         .hero {
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: 
+                linear-gradient(rgba(15, 15, 35, 0.8), rgba(15, 15, 35, 0.8)),
+                url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAH0AyADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=');
+            background-size: cover;
+            background-position: center;
             text-align: center;
-            padding: 0 2rem;
             position: relative;
-            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
         }
 
         .hero-content {
-            max-width: 1000px;
+            max-width: 800px;
             z-index: 2;
+            position: relative;
         }
 
         .hero h1 {
-            font-size: 5rem;
-            font-weight: 900;
-            margin-bottom: 2rem;
-            background: linear-gradient(135deg, #ffffff 0%, #e879f9 25%, #c084fc 50%, #a855f7 75%, #7c3aed 100%);
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #7affff, #5ce1e6, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: heroGlow 3s ease-in-out infinite alternate;
-            text-shadow: 0 0 50px rgba(147, 51, 234, 0.8);
-            line-height: 1.1;
+            text-shadow: 0 0 30px rgba(122, 255, 255, 0.5);
+            animation: glow 3s ease-in-out infinite alternate;
         }
 
-        @keyframes heroGlow {
-            from { 
-                filter: drop-shadow(0 0 20px rgba(147, 51, 234, 0.8));
-                transform: scale(1);
-            }
-            to { 
-                filter: drop-shadow(0 0 40px rgba(147, 51, 234, 1)) drop-shadow(0 0 60px rgba(168, 85, 247, 0.6));
-                transform: scale(1.02);
-            }
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 10px rgba(122, 255, 255, 0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(122, 255, 255, 0.8)); }
         }
 
-        .hero-subtitle {
+        .hero p {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 600;
+            margin-bottom: 2rem;
+            opacity: 0.9;
         }
 
-        .hero-description {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
-        }
-
-        .hero-buttons {
+        .cta-buttons {
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        .cta-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, #7c3aed, #a855f7, #c084fc);
-            color: white;
-            text-decoration: none;
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
             border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: all 0.4s ease;
-            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.4);
-            position: relative;
-            overflow: hidden;
-            border: 2px solid transparent;
-        }
-
-        .cta-primary::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .cta-primary:hover::before {
-            left: 100%;
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 50px rgba(124, 58, 237, 0.6);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .cta-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.2rem 3rem;
-            background: rgba(147, 51, 234, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border: 2px solid rgba(147, 51, 234, 0.5);
-            backdrop-filter: blur(10px);
-            transition: all 0.4s ease;
-        }
-
-        .cta-secondary:hover {
-            background: rgba(147, 51, 234, 0.4);
-            border-color: rgba(147, 51, 234, 0.8);
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(147, 51, 234, 0.3);
-        }
-
-        /* Features Section with Cards */
-        .features {
-            padding: 8rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 4rem;
-            background: linear-gradient(135deg, #ffffff, #e879f9, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, #7c3aed, #a855f7);
-            border-radius: 2px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .feature-card {
-            background: rgba(10, 0, 21, 0.4);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(147, 51, 234, 0.3);
-            border-radius: 25px;
-            padding: 3rem 2.5rem;
-            text-align: center;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            border-color: rgba(147, 51, 234, 0.6);
-            box-shadow: 0 25px 50px rgba(147, 51, 234, 0.4);
-            background: rgba(10, 0, 21, 0.6);
-        }
-
-        .feature-icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            display: block;
-            filter: drop-shadow(0 0 15px rgba(147, 51, 234, 0.8));
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #e879f9;
-            font-weight: 700;
-        }
-
-        .feature-card p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
             font-size: 1.1rem;
-        }
-
-        /* Jobs Section */
-        .jobs {
-            background: rgba(5, 0, 10, 0.8);
-            padding: 8rem 2rem;
-            position: relative;
-        }
-
-        .jobs-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .jobs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .job-card {
-            background: rgba(147, 51, 234, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(147, 51, 234, 0.3);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
             transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
             position: relative;
             overflow: hidden;
         }
 
-        .job-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.2), transparent);
-            transition: left 0.5s ease;
+        .btn-primary {
+            background: transparent;
+            color: white;
+            border: 2px solid #7affff;
         }
 
-        .job-card:hover::after {
-            left: 100%;
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid #7affff;
         }
 
-        .job-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(147, 51, 234, 0.6);
-            box-shadow: 0 20px 40px rgba(147, 51, 234, 0.3);
-        }
-
-        .job-emoji {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .job-card h3 {
-            color: #c084fc;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            font-weight: 700;
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(122, 255, 255, 0.4);
         }
 
         /* Stats Section */
         .stats {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(168, 85, 247, 0.1));
-            backdrop-filter: blur(10px);
+            padding: 4rem 2rem;
+            background: rgba(26, 26, 46, 0.8);
         }
 
         .stats-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
-            text-align: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
         }
 
-        .stat-item {
+        .stat-card {
+            background: linear-gradient(135deg, rgba(122, 255, 255, 0.1), rgba(92, 225, 230, 0.1));
             padding: 2rem;
-            background: rgba(10, 0, 21, 0.3);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(147, 51, 234, 0.3);
-            border-radius: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(122, 255, 255, 0.3);
             transition: all 0.3s ease;
         }
 
-        .stat-item:hover {
+        .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(147, 51, 234, 0.3);
+            box-shadow: 0 15px 30px rgba(122, 255, 255, 0.2);
         }
 
         .stat-number {
-            font-size: 3.5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #7c3aed, #a855f7, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #7affff;
+            margin-bottom: 0.5rem;
         }
 
         .stat-label {
             font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 600;
+            opacity: 0.8;
         }
 
-        /* Footer */
-        footer {
-            background: rgba(5, 0, 10, 0.9);
-            padding: 4rem 2rem 2rem;
-            border-top: 1px solid rgba(147, 51, 234, 0.3);
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
         }
 
-        .footer-content {
-            max-width: 1400px;
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #7affff, #5ce1e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .features-grid {
+            max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(122, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(122, 255, 255, 0.3);
+            border-color: rgba(122, 255, 255, 0.5);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #7affff;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .feature-description {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        /* Jobs Section */
+        .jobs {
+            padding: 4rem 2rem;
+            background: rgba(22, 33, 62, 0.8);
+        }
+
+        .jobs-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .job-card {
+            background: linear-gradient(135deg, rgba(122, 255, 255, 0.15), rgba(92, 225, 230, 0.15));
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(122, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(122, 255, 255, 0.2);
+        }
+
+        .job-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #5ce1e6;
+        }
+
+        /* Rules Section */
+        .rules {
+            padding: 4rem 2rem;
+        }
+
+        .rules-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .rule-item {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-right: 4px solid #7affff;
+            transition: all 0.3s ease;
+        }
+
+        .rule-item:hover {
+            background: rgba(122, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        /* Discord Section */
+        .discord {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #7289da, #5865f2);
             text-align: center;
         }
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
+        .discord-content {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .footer-links a {
-            color: #c084fc;
+        .discord h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .discord-btn {
+            background: #ffffff;
+            color: #5865f2;
+            padding: 1rem 2rem;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 10px;
-        }
-
-        .footer-links a:hover {
-            color: #e879f9;
-            background: rgba(147, 51, 234, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .footer-text {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 1.1rem;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: 2px solid rgba(147, 51, 234, 0.5);
-            color: white;
-            font-size: 1.5rem;
-            padding: 0.5rem;
-            border-radius: 8px;
-            cursor: pointer;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
             transition: all 0.3s ease;
         }
 
-        .mobile-menu-btn:hover {
-            border-color: rgba(147, 51, 234, 0.8);
-            background: rgba(147, 51, 234, 0.2);
+        .discord-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        .mobile-nav {
-            display: none;
+        /* Footer */
+        .footer {
+            background: #0f0f23;
+            padding: 3rem 2rem 1rem;
+            border-top: 2px solid #ff6b35;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            opacity: 1;
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 107, 53, 0.3);
+            opacity: 0.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Particle Animation */
+        .particles {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
-            background: rgba(10, 0, 21, 0.95);
-            backdrop-filter: blur(20px);
-            z-index: 2000;
-            padding: 2rem;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
         }
 
-        .mobile-nav.active {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .mobile-nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: 600;
-            padding: 1rem 2rem;
-            margin: 0.5rem 0;
-            border-radius: 15px;
-            background: rgba(147, 51, 234, 0.2);
-            border: 1px solid rgba(147, 51, 234, 0.3);
-            transition: all 0.3s ease;
-            text-align: center;
-            min-width: 200px;
-        }
-
-        .mobile-nav a:hover {
-            background: rgba(147, 51, 234, 0.4);
-            transform: scale(1.05);
-        }
-
-        .mobile-close {
+        .particle {
             position: absolute;
-            top: 2rem;
-            right: 2rem;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
+            width: 2px;
+            height: 2px;
+            background: #7affff;
+            border-radius: 50%;
+            animation: float 6s infinite linear;
         }
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 4rem;
+        @keyframes float {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) scale(0);
             }
-            
-            .section-title {
-                font-size: 3rem;
+            10% {
+                opacity: 1;
             }
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
+            90% {
+                opacity: 1;
             }
-            
-            .nav-links {
-                display: none;
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) scale(1);
             }
-            
-            .hero {
-                padding: 6rem 1rem 4rem;
-                min-height: 90vh;
-            }
-            
-            .hero h1 {
-                font-size: 2.8rem;
-                line-height: 1.2;
-                margin-bottom: 1.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-                margin-bottom: 1rem;
-            }
-            
-            .hero-description {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: stretch;
-            }
-            
-            .cta-primary,
-            .cta-secondary {
-                padding: 1rem 2rem;
-                font-size: 1.1rem;
-                text-align: center;
-            }
-            
-            .features,
-            .jobs {
-                padding: 4rem 1rem;
-            }
-            
-            .section-title {
-                font-size: 2.5rem;
-                margin-bottom: 2rem;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            .feature-card {
-                padding: 2rem 1.5rem;
-            }
-            
-            .feature-icon {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
-            
-            .jobs-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 1.5rem;
-            }
-            
-            .job-card {
-                padding: 1.5rem;
-            }
-            
-            .stats {
-                padding: 3rem 1rem;
-            }
-            
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-            
-            .stat-number {
-                font-size: 2.5rem;
-            }
-            
-            .stat-label {
-                font-size: 1rem;
-            }
-            
-            .footer-links {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-            }
-            
-            .footer-links a {
-                padding: 0.8rem 1.5rem;
-                border-radius: 10px;
-                background: rgba(147, 51, 234, 0.2);
-                border: 1px solid rgba(147, 51, 234, 0.3);
-                min-width: 200px;
-                text-align: center;
-            }
-            
-            nav {
-                padding: 0 1rem;
-            }
-            
-            .logo {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .hero-description {
-                font-size: 0.95rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .feature-card {
-                padding: 1.5rem 1rem;
-            }
-            
-            .feature-card h3 {
-                font-size: 1.3rem;
-            }
-            
-            .feature-card p {
-                font-size: 1rem;
-            }
-            
-            .stats-container {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .stat-number {
-                font-size: 2rem;
-            }
-            
-            .jobs-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .logo {
-                font-size: 1.8rem;
-            }
-            
-            .cta-primary,
-            .cta-secondary {
-                padding: 0.9rem 1.5rem;
-                font-size: 1rem;
-            }
-        }
-
-        /* Scroll Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <div class="bg-container"></div>
-    <div class="floating-elements"></div>
-    
-    <header>
-        <nav>
-            <div class="logo">Legesty City RP</div>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
-            <ul class="nav-links">
-                <li><a href="#home">🏠 الرئيسية</a></li>
-                <li><a href="#features">✨ المميزات</a></li>
-                <li><a href="#jobs">💼 الوظائف</a></li>
-                <li><a href="https://discord.gg/fm4" target="_blank">💬 ديسكورد</a></li>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">🏙️ Legesty City RP</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a href="#features">المميزات</a></li>
+                <li class="nav-item"><a href="#jobs">الوظائف</a></li>
+                <li class="nav-item"><a href="#rules">القوانين</a></li>
+                <li class="nav-item"><a href="#" id="exam-link">الاختبار الإلكتروني</a></li>
+                <li class="nav-item"><a href="#discord">ديسكورد</a></li>
             </ul>
         </nav>
-        
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <button class="mobile-close" onclick="toggleMobileMenu()">✕</button>
-            <a href="#home" onclick="toggleMobileMenu()">🏠 الرئيسية</a>
-            <a href="#features" onclick="toggleMobileMenu()">✨ المميزات</a>
-            <a href="#jobs" onclick="toggleMobileMenu()">💼 الوظائف</a>
-            <a href="https://discord.gg/fm4" target="_blank">💬 ديسكورد</a>
-        </div>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>مرحباً بك في ليجستي سيتي</h1>
-                <div class="hero-subtitle">أفضل خادم رول بلاي للحياة الواقعية في روبلوكس</div>
-                <p class="hero-description">
-                    عش حياة كاملة وحقيقية في مدينة متطورة مليئة بالوظائف المثيرة والفرص اللانهائية. 
-                    كن من تريد واصنع قصتك الخاصة في عالمنا الديناميكي!
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://www.roblox.com/ar/games/121442357510404/Legesty-City-Cfw" target="_blank" class="cta-primary">
-                        🎮 ابدأ اللعب الآن
-                    </a>
-                    <a href="https://discord.gg/fm4" target="_blank" class="cta-secondary">
-                        💬 انضم للديسكورد
-                    </a>
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>مرحباً بك في Legesty City</h1>
+            <p>أفضل سيرفر الحياة الواقعية في Roblox</p>
+            <div class="cta-buttons">
+                <a href="https://www.roblox.com/games/121442357510404/Legesty-City-Cfw" target="_blank" class="btn btn-primary">ابدأ اللعب الآن</a>
+                <a href="#features" class="btn btn-secondary">تعرف على المزيد</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="stats">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <div class="stat-number">2,500+</div>
-                    <div class="stat-label">لاعب نشط يومياً</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">وظيفة متنوعة</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">خوادم متاحة دائماً</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99.9%</div>
-                    <div class="stat-label">معدل التشغيل</div>
-                </div>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card fade-in">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">لاعب نشط</div>
             </div>
-        </section>
-
-        <section class="features" id="features">
-            <h2 class="section-title">لماذا ليجستي سيتي؟</h2>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">🌆</span>
-                    <h3>مدينة حقيقية</h3>
-                    <p>مدينة كاملة مع أحياء متنوعة، مباني شاهقة، وأماكن للترفيه والعمل. كل زاوية مصممة بعناية لتمنحك تجربة واقعية مذهلة.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">💼</span>
-                    <h3>وظائف متنوعة</h3>
-                    <p>أكثر من 15 وظيفة مختلفة من الطبيب إلى رجل الأعمال. كل وظيفة لها مهامها الخاصة ونظام ترقية متقدم.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">🚗</span>
-                    <h3>نظام مواصلات</h3>
-                    <p>سيارات فاخرة، حافلات عامة، وحتى طائرات خاصة. استكشف المدينة بالطريقة التي تفضلها مع نظام قيادة واقعي.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">🏠</span>
-                    <h3>منازل قابلة للتخصيص</h3>
-                    <p>اشتري منزل أحلامك وصممه كما تشاء. من الشقق الصغيرة إلى القصور الفاخرة، كل شيء ممكن في ليجستي.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">👮</span>
-                    <h3>نظام قانوني متقدم</h3>
-                    <p>شرطة، محامون، وقضاة حقيقيون. نظام عدالة كامل يضمن اللعب النظيف والعادل لجميع اللاعبين.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <span class="feature-icon">🎭</span>
-                    <h3>أحداث أسبوعية</h3>
-                    <p>مهرجانات، مسابقات، وأحداث خاصة كل أسبوع. لن تشعر بالملل أبداً مع التحديثات المستمرة والفعاليات المثيرة.</p>
-                </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">متاح دائماً</div>
             </div>
-        </section>
-
-        <section class="jobs" id="jobs">
-            <div class="jobs-container">
-                <h2 class="section-title">الوظائف المتاحة</h2>
-                <div class="jobs-grid">
-                    <div class="job-card">
-                        <span class="job-emoji">👮‍♂️</span>
-                        <h3>شرطي</h3>
-                        <p>احم المدينة واضمن الأمان للجميع</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🩺</span>
-                        <h3>طبيب</h3>
-                        <p>أنقذ الأرواح في المستشفى الحديث</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🚒</span>
-                        <h3>رجل إطفاء</h3>
-                        <p>اطفئ الحرائق وساعد في الطوارئ</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🏢</span>
-                        <h3>رجل أعمال</h3>
-                        <p>ابني إمبراطوريتك التجارية</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🚕</span>
-                        <h3>سائق تاكسي</h3>
-                        <p>انقل الركاب عبر المدينة</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🏛️</span>
-                        <h3>محامي</h3>
-                        <p>دافع عن العدالة في المحكمة</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">📺</span>
-                        <h3>إعلامي</h3>
-                        <p>اعرض الأخبار في التلفزيون</p>
-                    </div>
-                    <div class="job-card">
-                        <span class="job-emoji">🏪</span>
-                        <h3>صاحب متجر</h3>
-                        <p>أدر متجرك الخاص في المدينة</p>
-                    </div>
-                </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">وظيفة متنوعة</div>
             </div>
-        </section>
-    </main>
+            <div class="stat-card fade-in">
+                <div class="stat-number">5★</div>
+                <div class="stat-label">تقييم ممتاز</div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">مميزات السيرفر</h2>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🏙️</div>
+                <h3 class="feature-title">مدينة حقيقية</h3>
+                <p class="feature-description">مدينة مفصلة بالكامل في Roblox مع مباني حقيقية وأماكن تفاعلية للاستكشاف</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">وظائف متنوعة</h3>
+                <p class="feature-description">أكثر من 50 وظيفة مختلفة من الطبيب إلى رجل الأعمال إلى المجرم</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🚗</div>
+                <h3 class="feature-title">سيارات حصرية</h3>
+                <p class="feature-description">مجموعة ضخمة من السيارات والمركبات المتنوعة في Roblox</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🏠</div>
+                <h3 class="feature-title">عقارات للبيع</h3>
+                <p class="feature-description">اشترِ منزلك الخاص أو شقة أو حتى فيلا فاخرة في أفضل الأحياء</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">👮‍♂️</div>
+                <h3 class="feature-title">نظام شرطة متطور</h3>
+                <p class="feature-description">نظام شرطة واقعي مع دوريات وتحقيقات وقضايا جنائية</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎭</div>
+                <h3 class="feature-title">أحداث مستمرة</h3>
+                <p class="feature-description">فعاليات وأحداث يومية تجعل التجربة مثيرة ومتجددة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs">
+        <h2 class="section-title">الوظائف المتاحة</h2>
+        <div class="jobs-grid">
+            <div class="job-card fade-in">
+                <div class="job-icon">👮‍♂️</div>
+                <h3>شرطي</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">🚑</div>
+                <h3>طبيب</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">👨‍💼</div>
+                <h3>رجل أعمال</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">🚖</div>
+                <h3>سائق تاكسي</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">🔧</div>
+                <h3>ميكانيكي</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">🏪</div>
+                <h3>صاحب متجر</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">📺</div>
+                <h3>صحفي</h3>
+            </div>
+            <div class="job-card fade-in">
+                <div class="job-icon">💰</div>
+                <h3>محاسب</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules">
+        <h2 class="section-title">قوانين السيرفر</h2>
+        <div class="rules-container">
+            <div class="rule-item fade-in">
+                <h3>🚫 عدم التخريب</h3>
+                <p>ممنوع التخريب أو إفساد تجربة اللاعبين الآخرين</p>
+            </div>
+            <div class="rule-item fade-in">
+                <h3>🎭 اللعب بالشخصية</h3>
+                <p>يجب الالتزام بشخصيتك والتصرف بواقعية</p>
+            </div>
+            <div class="rule-item fade-in">
+                <h3>💬 الاحترام المتبادل</h3>
+                <p>احترم جميع اللاعبين وتجنب السب والشتم</p>
+            </div>
+            <div class="rule-item fade-in">
+                <h3>🚗 القيادة الآمنة</h3>
+                <p>قد بحذر واتبع قوانين المرور</p>
+            </div>
+            <div class="rule-item fade-in">
+                <h3>⚖️ العدالة</h3>
+                <p>لا تستغل الأخطاء أو تستخدم الغش</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="discord">
+        <div class="discord-content">
+            <h2>انضم إلى مجتمعنا</h2>
+            <p>تواصل مع اللاعبين الآخرين واحصل على آخر الأخبار والتحديثات</p>
+            <a href="https://discord.gg/li-1" class="discord-btn">انضم إلى Discord</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://discord.com/channels/1352650776865931294/1352651828243988520" target="_blank">📋 القوانين</a>
-                <a href="https://discord.gg/fm4" target="_blank">💬 ديسكورد</a>
-                <a href="https://www.roblox.com/ar/games/121442357510404/Legesty-City-Cfw" target="_blank">🏙️ الماب</a>
-                <a href="https://www.roblox.com/ar/games/96663580480110/Legesty-Fights" target="_blank">⚔️ ماب الفايتات</a>
+            <div class="footer-section">
+                <h3>Legesty City</h3>
+                <p>أفضل سيرفر الحياة الواقعية في Roblox. انضم إلينا وعش تجربة لا تُنسى.</p>
             </div>
-            <p class="footer-text">&copy; 2025 Legesty City RP. جميع الحقوق محفوظة. صنع بـ ❤️ للمجتمع العربي</p>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#jobs">الوظائف</a></li>
+                    <li><a href="#rules">القوانين</a></li>
+                    <li><a href="https://salehddev.github.io/Legesty.City.Electronic-test/" target="_blank">الاختبار الإلكتروني</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">تويتر</a></li>
+                    <li><a href="#">يوتيوب</a></li>
+                    <li><a href="#">انستقرام</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>معلومات السيرفر</h3>
+                <ul>
+                    <li>IP: 127.0.0.1:30120</li>
+                    <li>اللاعبين: 128/128</li>
+                    <li>الحالة: متصل</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Legesty City. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu functionality
-        function toggleMobileMenu() {
-            const mobileNav = document.getElementById('mobileNav');
-            mobileNav.classList.toggle('active');
-        }
-
-        // Create floating 3D elements
-        function createFloatingCube() {
-            const cube = document.createElement('div');
-            cube.className = 'floating-cube';
-            cube.style.left = Math.random() * 100 + '%';
-            cube.style.top = Math.random() * 100 + '%';
-            cube.style.animationDelay = Math.random() * 8 + 's';
-            cube.style.animationDuration = (Math.random() * 4 + 6) + 's';
-            
-            document.querySelector('.floating-elements').appendChild(cube);
-            
-            setTimeout(() => {
-                cube.remove();
-            }, 12000);
-        }
-
-        // Create cubes periodically (less on mobile)
-        const isMobile = window.innerWidth <= 768;
-        setInterval(createFloatingCube, isMobile ? 1000 : 500);
-
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1022,73 +685,81 @@
             });
         });
 
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+        // Particles animation
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                particle.style.animationDelay = Math.random() * 2 + 's';
+                particlesContainer.appendChild(particle);
             }
+        }
+
+        // Fade in animation on scroll
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            handleScrollAnimations();
+            
+            // Exam link functionality
+            const examLink = document.getElementById('exam-link');
+            examLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open('https://salehddev.github.io/Legesty.City.Electronic-test/', '_blank');
+            });
+            
+            // Update stats with animation
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const finalNumber = stat.textContent;
+                const isPlus = finalNumber.includes('+');
+                const isStar = finalNumber.includes('★');
+                const isSlash = finalNumber.includes('/');
+                
+                if (!isPlus && !isStar && !isSlash) {
+                    let currentNumber = 0;
+                    const increment = parseInt(finalNumber) / 100;
+                    const timer = setInterval(() => {
+                        currentNumber += increment;
+                        if (currentNumber >= parseInt(finalNumber)) {
+                            stat.textContent = finalNumber;
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(currentNumber);
+                        }
+                    }, 20);
+                }
+            });
         });
 
-        // Animate stats when in view
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        window.addEventListener('scroll', handleScrollAnimations);
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const statNumbers = entry.target.querySelectorAll('.stat-number');
-                    statNumbers.forEach(stat => {
-                        const finalValue = stat.textContent;
-                        let currentValue = 0;
-                        const increment = finalValue.includes('K') ? 
-                            parseInt(finalValue) * 100 / 100 : 
-                            parseInt(finalValue) / 100;
-                        
-                        const timer = setInterval(() => {
-                            currentValue += increment;
-                            if (finalValue.includes('K')) {
-                                stat.textContent = Math.floor(currentValue / 100) + 'K+';
-                                if (currentValue >= parseInt(finalValue) * 100) {
-                                    stat.textContent = finalValue;
-                                    clearInterval(timer);
-                                }
-                            } else if (finalValue.includes('%')) {
-                                stat.textContent = Math.floor(currentValue) + '%';
-                                if (currentValue >= parseInt(finalValue)) {
-                                    stat.textContent = finalValue;
-                                    clearInterval(timer);
-                                }
-                            } else {
-                                stat.textContent = finalValue;
-                                clearInterval(timer);
-                            }
-                        }, 30);
-                    });
-                }
-            });
-        }, observerOptions);
-
-        observer.observe(document.querySelector('.stats'));
-
-        // Fade in animation
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const fadeObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        fadeElements.forEach(el => fadeObserver.observe(el));
-
-        // Optimize performance on mobile
-        if (isMobile) {
-            // Reduce animations on mobile
-            document.body.style.setProperty('--animation-duration', '0.3s');
-        }
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 15, 35, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 15, 35, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
